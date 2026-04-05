@@ -1,0 +1,38 @@
+*{
+  background-color: rgb(87, 86, 86);
+}
+.head{
+  color: darkblue;
+}
+#bglime{
+  background-color: lime ;
+}
+#bglime span{
+  background-color: lime ;
+  color: red ;
+}
+
+p{
+  background-color: rgb(247, 201, 142);
+  color: white;
+}
+#para{
+  color: green;
+}
+#para span{
+  font-size: x-large;
+  background-color: rgb(247, 201, 142);
+  color: black;
+}
+ul li a{
+  background-color: rgb(186, 228, 72);
+}
+ul li span a{
+  background-color: rgb(72, 88, 228);
+}
+ol li:nth-child(2){
+  color: blue;
+}
+ol li:nth-child(3){
+  color: red;
+}
