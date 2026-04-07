@@ -1,9 +1,16 @@
 *{
   margin: 0;
   padding:0;
+  box-sizing:content-box;
 }
+body{
+  height: 100vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .bodyImage{
   padding: 10% 25%;
+  width: 50vw;
 }
 img{
   display: block;
@@ -11,5 +18,6 @@ img{
 }
 button{
   width: 100%;
+  height: 10vh;
   background:linear-gradient(to right, yellow, green);
 }
