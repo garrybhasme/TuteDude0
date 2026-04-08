@@ -1,0 +1,165 @@
+*{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar {
+  position: relative;
+}
+
+/* Left logo */
+.navbar img {
+  width: 100px;
+  float: left;
+}
+
+/* Right username */
+.username {
+  float: right;
+  margin: 10px;
+  color: rgb(51, 156, 231);
+  background-color: rgba(167, 226, 236, 0.55);
+  padding: 0px 10px;
+  border-radius: 10px;
+}
+
+/* Perfect center */
+.menu {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+  margin: 30px 0px;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 15px;
+}
+.bodyDiv{
+  display: inline-block;
+}
+
+.details,
+.image {
+  display: inline-block;
+}
+.details {
+  float: left;
+  width: 50%;
+  width: 40%;
+  height: 50vh;
+  padding: 5%;
+
+}
+
+.image {
+  float: right;
+  width: 50%;
+}
+
+.image img {
+  width: 100%;
+}
+
+/* Important: clear float */
+.bodyDiv::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+h2{
+  color: rgb(78, 128, 169);
+}
+p{
+  color: rgb(89, 86, 86);
+}
+button{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(78, 128, 169);
+  color: aliceblue;
+  border: white;
+}
+
+/* Media Query for Tablet */
+@media (max-width:768px) and (max-height:1024px){
+  .navbar img{
+    width: 70px;
+  }
+  .menu{
+    left: 42%;
+    font-size: medium;
+    margin: 15px 0px;
+  }
+  .username{
+    width: 85px;
+    height: 40px;
+    font-size: small;
+  }
+  .username h3{
+    font-size: 1em;
+    margin: 10px 5px;
+  }
+  .bodyDiv{
+    text-align: center;
+  }
+  .details h1{
+    font-size: 1.5em;
+  }
+  .details h2{
+    font-size: 1.2em;
+  }
+  .details p{
+    font-size: 0.8em;
+  }
+  .image{
+    width: 45%;
+    margin-right: 30px;
+    margin-top: 30px;
+  }
+}
+
+/* Media Query for Phone */
+@media (max-width:376px) and (max-height:748px){
+  .navbar img{
+    width: 50px;
+  }
+  .username{
+    width: 70px;
+    height: 35px;
+    margin: 0;
+  }
+  .username h3{
+    font-size: 0.85em;
+  }
+  .menu{
+    display: none;
+  }
+  .bodyDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .details{
+    width: 125%;
+    position: relative;
+    top: 30px;
+    left: 25px;
+  }
+  .image{
+    width: 180%;
+    margin: 0;
+    position: relative;
+    left: 20px;
+  }
+    .details h1{
+    font-size: 1.2em;
+  }
+  .details h2{
+    font-size: 1em;
+  }
+  .details p{
+    font-size: 0.6em;
+  }
+}
