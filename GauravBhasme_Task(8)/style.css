@@ -131,22 +131,34 @@ button{
   .navbar img{
     width: 50px;
   }
-  .ham img {
+  .ham{
+    width: 40px;
+    height: 40px;
     display: block;
-    width: 30px;
     float: right;
     position: absolute;
     right: 10px;
   }
+  .ham img {
+    top: 5px;
+    display: block;
+    width: 29px;
+    float: right;
+    position: absolute;
+    right: 5px;
+  }
   .menu{
     display: none;
   }
-  .menu2{
+  .ham-menu{
     display: none;
   }
-
-  .ham:hover{
-    .menu2{
+/* 
+  :focus applies when the button is clicked or tabbed.
+  It shows the menu using + selector.
+  Menu hides when focus is lost.
+*/
+  .ham:focus + .ham-menu{
       display: flex;
       flex-direction: column;
       background-color: black;
@@ -159,7 +171,7 @@ button{
       align-items:center;
       z-index: 2;
     }
-    .menu2 li {
+    .ham-menu li {
       display: inline-block;
       margin: 0 15px;
       color: aliceblue;
@@ -169,7 +181,7 @@ button{
 
   .username{
     position: absolute;
-    right: 42px;
+    right: 55px;
     width: 70px;
     height: 35px;
     margin: 0;
