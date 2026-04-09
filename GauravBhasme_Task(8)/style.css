@@ -39,6 +39,11 @@
   display: inline-block;
   margin: 0 15px;
 }
+
+.ham-menu, .ham{
+    display: none;
+  }
+
 .bodyDiv{
   display: inline-block;
 }
@@ -150,10 +155,7 @@ button{
   .menu{
     display: none;
   }
-  .ham-menu{
-    display: none;
-  }
-/* 
+  /* 
   :focus applies when the button is clicked or tabbed.
   It shows the menu using + selector.
   Menu hides when focus is lost.
@@ -164,12 +166,12 @@ button{
       background-color: black;
       position: fixed;
       right: 0;
-      left: 30%;
-      width: 200px;
+      width: 150px;
       height: 90vh;
       justify-content: center;
       align-items:center;
       z-index: 2;
+      padding: 0px;
     }
     .ham-menu li {
       display: inline-block;
@@ -177,11 +179,10 @@ button{
       color: aliceblue;
       text-align: center;
     }
-  }
 
   .username{
     position: absolute;
-    right: 55px;
+    right: 52px;
     width: 70px;
     height: 35px;
     margin: 0;
@@ -196,16 +197,16 @@ button{
     align-items: center;
   }
   .details{
-    width: 125%;
-    position: relative;
-    top: 30px;
-    left: 25px;
-  }
+      width: 95%;
+      position: relative;
+      top: 30px;
+      left: -20px;
+}
   .image{
-    width: 180%;
+    width: 120%;
     margin: 0;
     position: relative;
-    left: 20px;
+    left: -25px;
   }
     .details h1{
     font-size: 1.2em;
