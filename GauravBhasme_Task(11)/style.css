@@ -1,0 +1,271 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --defaultTextColor:#333;
+  --whiteTextColor:rgb(255, 255, 255);
+  --logosecondaryColor: rgb(77, 77, 239);
+  --webDefaultColor: rgb(255, 167, 3);
+  --borderRadiusSmallButtons:4px;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6rem;
+  color: var(--defaultTextColor);
+}
+
+/* Styling Navbar */
+.header{
+  background-color: var(--webDefaultColor);
+  color: var(--whiteTextColor);
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display:flex ;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo h1{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.logo span{
+  color: var(--logosecondaryColor);
+}
+
+.navlinks{
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.navlinks a{
+  text-decoration: none;
+  color: var(--whiteTextColor);
+  padding: 0.5rem 1rem;
+  border-radius: var(--borderRadiusSmallButtons);
+  transition: background-color 0.3s ease;
+}
+
+.navlinks a:hover{
+  background-color: rgb(230, 192, 123);
+}
+
+.righticons{
+  display: flex;
+  gap: 2rem;
+}
+
+.righticons img{
+  width: 30px;
+  transition: transform 0.1s ease-in-out;
+}
+
+.righticons img:hover{
+  transform: scale(1.2);
+}
+
+.righticons input{
+  border-radius: var(--borderRadiusSmallButtons);
+}
+
+/* Styling Hero Section */
+.home{
+  height: 60vh;
+  margin-top: 150px;
+}
+
+.hero{
+  display: flex;
+}
+
+.hero-text{
+  width: 40%;
+}
+
+.hero-text img{
+  width: 120px;
+}
+
+.hero-text h2{
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.hero-text h2 span{
+  color: var(--webDefaultColor);
+}
+
+.hero-text p{
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.btn{
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 24px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-primary{
+  background-color: #3f3e44;
+  color: var(--whiteTextColor);
+}
+
+.btn:hover{
+  background-color: var(--webDefaultColor);
+}
+
+.hero-image{
+  width: 60%;
+  margin-top: 30px;
+  transform: rotate(20deg);
+  display: flex;
+}
+
+.hero-image img{
+  width: 80%;
+}
+
+.services{
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--webDefaultColor);
+  padding: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.service{
+  display: flex;
+  gap: 1.1rem;
+  color: var(--whiteTextColor);  
+  transition: transform 0.3s ease-in-out;
+}
+
+.service:hover{
+  transform: scale(1.2);
+}
+
+.service img{
+  width: 40px;
+  height: 40px;
+}
+
+/* Styling Menu Section */
+.menu{
+  height: 100vh;
+}
+
+.pageLocation{
+  margin-left: 4rem;
+  font-size: small;
+  color: #6c6b6b
+}
+
+.imageDiv{
+  margin: 3rem;
+  width: 60%;
+}
+
+.imageDiv img{
+  width: 600px;
+}
+
+.detailsDiv{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.detailsDiv h2{
+  font-weight: bold;
+  width: 350px;
+}
+
+.detailsDiv p{
+  font-size: small;
+  color: #6c6b6b;
+  line-height: 1rem;
+}
+
+.price-discount{
+  display: flex;
+  justify-content: baseline;
+  gap: 2rem;
+}
+
+.price-discount h2{
+  width: fit-content;
+  background-color: #e4e3e3;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--borderRadiusSmallButtons);
+  color: var(--logosecondaryColor);
+}
+
+.discount h3{
+  color: rgb(146, 227, 25);
+}
+
+.addToCart select{
+  width: 40px;
+  height: 40px;
+  background-color: #e4e3e3;
+  border: none;
+  border-radius: var(--borderRadiusSmallButtons);
+  padding: 0.2rem;
+}
+
+.btn-secondary{
+  background-color: var(--webDefaultColor);
+  color: var(--whiteTextColor);
+  border-radius: 10px;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover{
+  background-color: var(--defaultTextColor);
+}
+
+.slides {
+  display: flex;
+  gap: 40px;
+  padding: 1.2rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+/* important */
+.slide {
+  height: 100px;
+  width: 150px; 
+  border-radius: 8px;
+}
