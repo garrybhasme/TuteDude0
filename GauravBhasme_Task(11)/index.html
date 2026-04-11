@@ -25,7 +25,7 @@
               <input name="fsrch" id="fsrch" placeholder="Search Shoes">
             </form>
           </search>
-          <img src="./images/icons/add-to-cart.png" alt="Add to Cart">
+          <a href="#cart-section"><img src="./images/icons/add-to-cart.png" alt="Add to Cart"></a>
           <img src="./images/icons/man.png" alt="profile">
         </div>
       </nav>
@@ -123,6 +123,179 @@
             <img src="./images/carasol4.jpg" class="slide">
             <img src="./images/carasol5.jpg" class="slide">
           </div>
+      </div>
+    </section>
+    <section id="cart-section" class="cart-section">
+      <h2 class="section-title">Shopping Cart</h2>
+      <div class="container cart-container">
+        <div class="cart-table-div">
+          <table>
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Quality</th>
+                <th>Price</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tr>
+              <td>Seven By M.S. Dhoni W...</td>
+              <td>- 1 +</td>
+              <td>₹4,999</td>
+              <td>❌</td>
+            </tr>
+            <tr>
+              <td>Seven By M.S. Dhoni W...</td>
+              <td>- 1 +</td>
+              <td>₹4,999</td>
+              <td>❌</td>
+            </tr>
+            <tr>
+              <td>Seven By M.S. Dhoni W...</td>
+              <td>- 1 +</td>
+              <td>₹4,999</td>
+              <td>❌</td>
+            </tr>
+          </table>
+        </div>
+        <div class="cart-price-div">
+          <div class="cart-price-table">
+            <table>
+              <thead>
+                <tr>
+                  <th><label for="cuppon">Enter Cuppon Code</label>
+                    <input type="text" name="cuppon" id="cuppon pl" placeholder="COUPON CODE">
+                  </th>
+                  <th>
+                    <a href="#" class="btn btn-tertiary">Apply Cuppon</a></th>
+                </tr>
+              </thead>
+              <tr class="cart-list">
+                <td>Sub Total</td>
+                <td>₹4,700</td>
+              </tr>
+              <tr class="cart-list">
+                <td>Taxes(if applicable)</td>
+                <td>₹199</td>
+              </tr>
+              <tr class="cart-list">
+                <td>Discount</td>
+                <td>₹0</td>
+              </tr>
+              <tr class="total">
+                <td>Total</td>
+                <td>₹4,999</td>
+              </tr>
+            </table>
+          </div>
+          <div class="cart-price-payment">
+            <a href="#" class="btn btn-secondary">Pay Now ₹4,999</a>
+            <div class="sponsors">
+              <img class="img-1" src="./images/secure.jpg" alt="Secure">
+              <img class="img-2" src="./images/razorpay.png" alt="Razorpay">
+              <img class="img-3"src="./images/securePaymentpng.png" alt="Secure Payment">
+          </div>
+          </div>
+        </div>
+      </div>
+      <a href="#home" class="continue-shopping">< Continue Shopping</a>
+    </section>
+    <section id="payment-section" class="payment-section">
+      <h3>Checkout</h3>
+      <div class="container payment-container">
+        <div class="payment-options"> 
+          <h2>Contact Details</h2>
+          <label for="email">Email ID</label>
+          <input type="mail" class="email-input" name="email" id="email" placeholder="JohnDoe@gmail.com">
+          <h2>Payment</h2>
+          <div class="payment">
+            <div class="payment-type">
+              <div class="payment-box">
+                <img src="./images/icons/card.png" alt="Card">
+                <h4>Card</h4>
+              </div>
+              <div class="payment-box">
+                <img src="./images/icons/crypto.png" alt="Crypto">
+                <h4>Crypto</h4>
+              </div>
+              <div class="payment-box">
+                <img src="./images/icons/bank.png" alt="Bank">
+                <h4>Bank</h4>
+              </div>
+              <div class="payment-box">
+                <img src="./images/icons/more.png" alt="More">
+              </div>
+            </div>
+            <table>
+              <tr>
+                <td colspan="2">
+                  <label for="cardnumber">Card Number</label>
+                  <input type="number" name="cardnumber" id="cardnumber" placeholder="123-456-789">
+                </td>
+                </tr>
+              <tr>
+                <td>
+                  <label for="expiry">Expiry</label>
+                  <input type="month" name="expiry" id="expiry">
+                </td>
+                <td>
+                  <label for="cvc">CVC</label>
+                  <input type="password" name="cvc" id="cvc" placeholder="...">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="country">Couuntry</label>
+                  <input type="text" name="country" id="country" placeholder="India">
+                </td>
+                <td>
+                  <label for="zip">ZIP</label>
+                  <input type="number" name="zip" id="zip" placeholder="XXXXXX">
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="cart-price-div">
+          <h2>Order Summary</h2>
+          <div class="cart-price-table">
+            <table>
+              <thead>
+                <tr>
+                  <th><label for="cuppon">Enter Cuppon Code</label>
+                    <input type="text" name="cuppon" id="cuppon pl" placeholder="COUPON CODE">
+                  </th>
+                  <th>
+                    <a href="#" class="btn btn-tertiary">Apply Cuppon</a></th>
+                </tr>
+              </thead>
+              <tr class="cart-list">
+                <td>Sub Total</td>
+                <td>₹4,700</td>
+              </tr>
+              <tr class="cart-list">
+                <td>Taxes(if applicable)</td>
+                <td>₹199</td>
+              </tr>
+              <tr class="cart-list">
+                <td>Discount</td>
+                <td>₹0</td>
+              </tr>
+              <tr class="total">
+                <td>Total</td>
+                <td>₹4,999</td>
+              </tr>
+            </table>
+          </div>
+          <div class="cart-price-payment">
+            <a href="#" class="btn btn-secondary">Pay Now ₹4,999</a>
+            <div class="sponsors">
+              <img class="img-1" src="./images/secure.jpg" alt="Secure">
+              <img class="img-2" src="./images/razorpay.png" alt="Razorpay">
+              <img class="img-3"src="./images/securePaymentpng.png" alt="Secure Payment">
+          </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
