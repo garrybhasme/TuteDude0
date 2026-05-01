@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 1000;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px gray solid;
+}
+
+.login{
+  background-color: #d0e0f0dc;
+  color: rgb(9, 42, 207);
+  text-decoration: none;
+  padding: 5px 20px;
+  border-radius: 15px;
+}
+
+.search-box {
+  display: flex;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-right: none;
+  outline: none;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.search-box button {
+  padding: 10px 15px;
+  border: 1px solid #007bff;
+  background-color: #683ab7;
+  color: white;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.search-box button:hover {
+  background-color: #6619c4;
+}
+/* Main Body Styling */
+.main{
+  margin-top: 150px;
+}
+
+.searchResult{
+  margin: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card{
+  background-color: #dedbdb92;
+  width: 250px;
+  line-height: 1.5rem;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 7px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card li{
+  list-style: none;
+}
+
+.card li span{
+  font-size: large;
+}

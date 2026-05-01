@@ -14,4 +14,4 @@ amount=compoundInterestCalculator(principal, rateOfInterest, noOfTimesInterestCo
 
 totalInterest=amount-principal;
 
-console.log(totalInterest);
+console.log("Total compund interest after ", years, "years is: ", totalInterest);
