@@ -1,0 +1,283 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color: rgb(246, 254, 254);
+}
+
+:root{
+  --borderRadiusSmallButtons:4px;
+}
+/* Styling navbar */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(234, 232, 232);
+  z-index: 1000;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display:flex ;
+  justify-content: space-around;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.1rem;
+}
+
+.logo h1{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.navlinks{
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.navlinks a{
+  text-decoration: none;
+  color: var(--whiteTextColor);
+  padding: 0.5rem 1rem;
+  border-radius: var(--borderRadiusSmallButtons);
+  transition: background-color 0.3s ease;
+}
+
+.navlinks a:hover{
+  background-color: rgb(107, 106, 105);
+  color: white;
+}
+
+.username{
+  background-color: #d0e0f0dc;
+  color: rgb(9, 42, 207);
+  text-decoration: none;
+  padding: 5px 20px;
+  border-radius: 15px;
+  transition: transform 0.1s ease-in-out;
+  margin: 5px;
+}
+.username:hover{
+  transform: scale(1.2);
+}
+
+.righticons{
+  display: flex;
+  width: 120px;
+}
+
+.righticons img{
+  width: 30px;
+  margin: 5px;
+  transition: transform 0.1s ease-in-out;
+}
+
+.righticons img:hover{
+  transform: scale(1.2);
+}
+
+/* Styling Main */
+.main{
+  height: 100vh;
+  margin-top: 80px;
+}
+
+.leftdivs{
+  display: flex;
+  flex-direction: column;
+}
+
+.box{
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+.addedItems{
+  height: 30vh;
+}
+
+.addedItems table{
+  margin: 10px;
+  text-align: center;
+}
+.totalAmount{
+  display: flex;
+  justify-content:space-between;
+}
+.addedItemstable{
+  width: 100%;
+}
+
+/* Container box */
+.bookNow {
+  max-width: 500px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.info-icon{
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.warning{
+  color: red;
+  border: 1px solid red;
+}
+.info{
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+.success{
+  color: rgb(46, 184, 4);;
+  border: 1px solid rgb(46, 184, 4);
+}
+.warningText{
+  color: red;
+}
+.infoText{
+  color: #007bff;
+}
+.successText{
+  color: rgb(46, 184, 4);
+}
+.actionMsg{
+  margin: 10px;
+}
+/* Heading */
+.divHeader {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* Table layout */
+.bookNow table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 1rem; /* gap between rows */
+}
+
+/* Cells */
+.bookNow td {
+  padding: 0 0.5rem;
+  vertical-align: top;
+}
+
+/* Labels */
+.bookNow label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 1.3rem;
+  color: #555;
+}
+
+/* Inputs */
+.bookNow input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1.4rem;
+  transition: 0.3s;
+}
+
+/* Focus effect */
+.bookNow input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+/* Button */
+.btn {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn-primary{
+  background-color: #092c946a;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #0056b3;
+}
+.disabled {
+  pointer-events: none;   /* disables click */
+  opacity: 0.5;           /* faded look */
+  cursor: not-allowed;
+  background-color: black;
+}
+/* Full width button */
+.bookNow td[colspan="2"] .btn {
+  margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .bookNow td {
+    display: block;
+    width: 100%;
+  }
+}
+
+.actionButtons{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+.actionButtons img{
+  width: 20px;
+}
+#skip-btn{
+  background-color: rgba(230, 83, 83, 0.541);
+  color: rgb(168, 11, 11);
+}
+#add-btn{
+  background-color: rgba(164, 232, 115, 0.541);
+  color: rgb(18, 138, 5);
+}
+.actionButtons a{
+  display: flex;
+}
+#item{
+  margin: 20px;
+}
+#item img{
+  margin: 15px;
+  border-radius: 15px;
+}
+.namePrice{
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#price{
+  color: #007bff;
+}
+

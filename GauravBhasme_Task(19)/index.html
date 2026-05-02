@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GauravBhasme_Task(19)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <h1 class="logo">Logo</h1>
+        <ul class="navlinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="righticons">
+          <a href="#" class="username">Username</a>
+          <img src="./images/logout.png" alt="logout">
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="leftdivs">
+        <div class="addedItems box">
+          <h2 class="divHeader">Added Items</h2>
+          <table class="addedItemstable">
+            <thead>
+              <tr>
+                <th>S.No</th>
+                <th>Service Name</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+          <div class="totalAmount">
+            <h2 class="divHeader">Total Amount</h2>
+            <h2 id="amount"></h2>
+          </div>
+        </div>
+        <div class="bookNow box">
+          <h2 class="divHeader">Book Now</h2>
+          <table>
+              <tr>
+                <td colspan="2">
+                  <label for="fullName">Full Name</label>
+                  <input type="text" name="fullName" id="fullName" placeholder="John Doe">
+                </td>
+                </tr>
+              <tr>
+                <td>
+                  <label for="email">Email ID</label>
+                  <input type="email" name="email" id="email" placeholder="mailid@gmail.com">
+                </td>
+                <td>
+                  <label for="phoneNumber">Phone Number</label>
+                  <input type="tel" name="cvc" id="cvc" placeholder="+919876543210">
+                </td>
+              </tr>            
+              <tr>
+                <td colspan="2">
+                  <a href="#" id="bookNowBtn" class="btn btn-primary">Book Now</a>
+                </td>
+                </tr>
+              <tr>
+            </table>
+            <p class="actionMsg" id="bookNowMsg"></p>
+        </div>
+      </div>
+      <div class="rightDiv box">
+        <div class="heading">
+          <h2 class="divHeader">Browse Our Services</h2>
+          <p>Click on the add to cart button to add the services to your cart or press skip</p>
+        </div>
+        <hr>
+        <div id="item">
+          <div>
+            <img src="./images/dryCleaning.jpg" alt="DryCleaning">
+            <div class="namePrice">
+              <h3>Dry Cleaning</h3>
+              <h3 id="price">₹200.00</h3>
+            </div>
+          </div>
+        </div>
+        <div class="actionButtons">
+          <a href="#" class="btn" id="skip-btn">Skip Item <img src="./images/round.png" alt=""></a>
+          <a href="#" class="btn" id="add-btn" >Add Item <img src="./images/circle.png" alt=""></a>
+        </div>
+        <hr>
+        <p class="actionMsg infoText"><span class="info-icon info">i</span>Add the items to the cart and book now</p>
+      </div>
+    </div>
+  </main>
+</body>
+<script src="script.js"></script>
+</html>
