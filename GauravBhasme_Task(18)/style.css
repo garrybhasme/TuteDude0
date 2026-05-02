@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header{
+  height: 50px;
+  width: 100vw;
+  text-align: center;
+  padding: 10px;
+  background-color: #ccc;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.boxes{
+  display: flex;
+  margin: 100px;
+}
+.box{
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -41,7 +41,8 @@ data.forEach((card)=>{
   divContiner.appendChild(createCardFromInfo(card));
 });
 
-document.getElementById('searchBtn').addEventListener('click',()=>{
+const input = document.getElementById("search");
+input.addEventListener("input", () => {
   divContiner.innerHTML='';
   const value=document.getElementById('search').value
   searchResult.innerHTML=`<h2>Search Results for ${value}</h2>`;
@@ -50,11 +51,3 @@ document.getElementById('searchBtn').addEventListener('click',()=>{
     divContiner.appendChild(createCardFromInfo(card));
   });
 })
-
-const input = document.getElementById("search");
-
-input.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
-    document.getElementById("searchBtn").click(); // reuse button logic
-  }
-});
