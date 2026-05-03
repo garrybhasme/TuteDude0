@@ -59,10 +59,40 @@
   }
   .works-step{margin-bottom: 10px;}
   .works-step:last-child{margin-bottom: 10px;}
+  .btn-send{
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* small phones from 0 to 480px */
 @media only screen and (max-width:480px){
+  .navbar{
+    display: flex;
+    padding: 30px;
+  }
   sectiton{padding: 25px 0;}
   .contact-form{width: 100%;}
+  .hero-text-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    margin-top: 50px;
+  }
+  .btn-full:link,
+  .btn-full:visited{
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .app-screen {
+    border-radius: 14px;
+    width: 40%;
+    box-shadow: 7px 7px 7px #aaaaaa;
+  }
+  .btn-app{
+    margin: 0px 50px;
+  }
 }
