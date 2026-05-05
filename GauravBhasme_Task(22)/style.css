@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@utility decoration-5{
+  font-weight:500;
+}
+@utility decoration-7{
+  font-weight:700;
+}
